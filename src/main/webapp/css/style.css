@@ -1,0 +1,41 @@
+
+.card{
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+
+.Isesion{
+	color: blue;
+}
+
+.Lbienvenidos{
+	margin-top:5px;
+	color: blue;
+}
+
+.lusuario{
+	margin-top:10px;
+	color: blue;
+}
+
+.lcontrasenia{
+	margin-top:10px;
+	color: blue;
+}
+
+.Btningresar{
+	color:black;
+	
+}
+
+.Btningresar:hover{
+	background-color: yellow;
+	color:black;
+}
+
+.astyle{
+	color: white;
+	text-decoration: none;
+}

@@ -1,0 +1,35 @@
+
+.card{
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+
+.Aproducto{
+	color: blue;
+	
+}
+
+
+
+.ldescripcion{
+	margin-top:5px;
+	color: blue;
+}
+
+.lPrecio{
+	margin-top:5px;
+	color: blue;
+}
+
+.lcategoria{
+	margin-top:2px;
+	color: blue;
+}
+
+.Btningresar{
+	color:black;
+	margin-bottom: 10px;
+	
+}
