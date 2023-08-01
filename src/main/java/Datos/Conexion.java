@@ -3,6 +3,7 @@ package Datos;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Conexion {
@@ -27,7 +28,16 @@ public class Conexion {
 		return st;
 	}
 
-
+    public Connection conexion() {
+    	return conexion;
+    }
+    
+    public Conexion() throws ClassNotFoundException, SQLException {
+    	Class.forName("com.mysql.cj.jdbc.Driver");
+		conexion = DriverManager.getConnection(server,user,password);
+    }
+    
+    
 	public void cerrarConexion(ResultSet rs){
 		if(rs !=null){
 			try{

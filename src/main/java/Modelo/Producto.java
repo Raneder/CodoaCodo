@@ -3,9 +3,9 @@ package Modelo;
 public class Producto {
      private Integer sku;
      private String descripcion;
-     private String precio;
+     private Double precio;
      private String categoria;
-	public Producto(Integer sku, String descripcion, String precio, String categoria) {
+	public Producto(Integer sku, String descripcion, Double precio, String categoria) {
 		super();
 		this.sku = sku;
 		this.descripcion = descripcion;
@@ -24,10 +24,10 @@ public class Producto {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public String getPrecio() {
+	public Double getPrecio() {
 		return precio;
 	}
-	public void setPrecio(String precio) {
+	public void setPrecio(Double precio) {
 		this.precio = precio;
 	}
 	public String getCategoria() {

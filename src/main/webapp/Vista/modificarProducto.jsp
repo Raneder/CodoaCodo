@@ -75,7 +75,7 @@
 	String sku = request.getParameter("sku");
 
 	String Desc = new String();
-	String Pre = new String();
+	Double Pre = 0.0;
 	String Categ = new String();
 
 	try {
@@ -85,7 +85,7 @@
 
 		if (rs.next()) {
 			Desc = rs.getString("descripcion");
-			Pre = rs.getString("precio");
+			Pre = rs.getDouble("precio");
 			Categ = rs.getString("categoria");
 		} else {
 			response.sendRedirect("ListadoProductos.jsp");
